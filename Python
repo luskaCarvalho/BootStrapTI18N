@@ -1,0 +1,133 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/luskaCarvalho/BootStrapTI18N/blob/main/Python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 7,
+      "metadata": {
+        "id": "zwFnJsE6vjf8",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 245
+        },
+        "outputId": "fb87b7ec-bc80-4e31-c9ec-1695040283d9"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Informe um número: 9\n",
+            "Informe outro número: 9\n"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "somar() missing 2 required positional arguments: 'num1' and 'num2'",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-7-b17622176eef>\u001b[0m in \u001b[0;36m<cell line: 35>\u001b[0;34m()\u001b[0m\n\u001b[1;32m     33\u001b[0m \u001b[0;31m#Chamar o método coletar\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     34\u001b[0m \u001b[0mcoletar\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 35\u001b[0;31m \u001b[0msomar\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     36\u001b[0m \u001b[0msubtrair\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     37\u001b[0m \u001b[0mdividir\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mTypeError\u001b[0m: somar() missing 2 required positional arguments: 'num1' and 'num2'"
+          ]
+        }
+      ],
+      "source": [
+        "import this\n",
+        "this.num1 = 0\n",
+        "this.num2 = 0\n",
+        "this.opcao = 1\n",
+        "this.tabuada1 = \"\"\n",
+        "this.tabuada2 = \"\"\n",
+        "def coletar():\n",
+        "  this.num1 = int(input(\"Informe um número: \"))\n",
+        "  this.num2 = int(input(\"Informe outro número: \"))\n",
+        "\n",
+        "\n",
+        "def somar(num1,num2):\n",
+        "  coletar()\n",
+        "  return this.num1 + this.num2\n",
+        "\n",
+        "\n",
+        "def subtrair():\n",
+        "  coletar()\n",
+        "  return this.num1 - this.num2\n",
+        "\n",
+        "\n",
+        "def dividir():\n",
+        "  coletar()\n",
+        "  if(this.num2 !=0):\n",
+        "    return this.num1 / this.num2\n",
+        "  else:\n",
+        "    return \"Impossível dividir por zero!\"\n",
+        "\n",
+        "\n",
+        "def multiplicar():\n",
+        "  coletar()\n",
+        "  return this.num1 * this.num2\n",
+        "\n",
+        "def tabuada():\n",
+        "  for i in range(0,11,1):\n",
+        "      this.tabuada1 += f\"{this.num1} * {i} = {this.num1 * i}\\n\"\n",
+        "      this.tabuada2 += f\"{this.num2} * {i} = {this.num2 * i}\\n\"\n",
+        "      return f\"Tabuda do {this.num1}: \\n{this.tabuada1} \\n\\n Tabuada do {this.num2}: \\n{this.tabuada2}\"\n",
+        "\n",
+        "def numeros():\n",
+        "  coletar()\n",
+        "  for i in range(this.num1)\n",
+        "\n",
+        "\n",
+        "def menu():\n",
+        "  while(this.opcao != 0):\n",
+        "   this.opcao = int(input(\"0.Sair\\n. 1.Somar\\n 3.Subtrair\\n 4.Dividir\\n 5.Multiplicar\\n\"))\n",
+        "if(this.opcao == 0):\n",
+        "    print(\"Obrigado!\")\n",
+        "elif(this.opcao == 1)\n",
+        "  coletar()\n",
+        "  print(somar())\n",
+        "elif(this.opcao == 2)\n",
+        "  coletar()\n",
+        "  print(subtrair())\n",
+        "elif(this.opcao == 3)\n",
+        "  coletar()\n",
+        "  print(dividir())\n",
+        "elif(this.opcao == 4)\n",
+        "  coletar()\n",
+        "  (multiplicar())\n",
+        "elif(this.opcao == 5)\n",
+        "  coletar()\n",
+        "  tabuada()\n",
+        "else:\n",
+        "  print(\"Opção escolhida não existe\")\n",
+        "\n",
+        "\n",
+        "menu()\n",
+        "\n"
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Olá, este é o Colaboratory",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
